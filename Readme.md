@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Алексей Яцишин](https://up.htmlacademy.ru/adaptive/27/user/1791887).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/evgeniy_kotov)
 
 ---
 
