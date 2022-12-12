@@ -1,0 +1,33 @@
+@import "../global/fonts.scss";
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: center;
+  background-image: url("../../img/rectangle-background.svg"),
+    url("../../img/welcome-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0 85px;
+  margin-bottom: 32px;
+}
+
+.welcome__slogan {
+  margin: 0;
+  margin-bottom: 35px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0 18px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.welcome__intro {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 18px;
+  margin-bottom: 35px;
+}

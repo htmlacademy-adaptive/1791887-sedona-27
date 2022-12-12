@@ -1,0 +1,45 @@
+.search__wrapper {
+  padding: 38px 29px 49px;
+}
+
+.search__title {
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search__description {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.search__link {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $blue;
+  padding: 16px 50px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $darkerblue;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $grey;
+  }
+}

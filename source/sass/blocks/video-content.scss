@@ -1,0 +1,27 @@
+.video-content {
+  margin-top: 17px;
+}
+
+.video-content__title {
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  color: $black;
+  margin-bottom: 60px;
+}
+
+.video-content__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+
+.presentation__video {
+  display: block;
+  width: 100%;
+}
