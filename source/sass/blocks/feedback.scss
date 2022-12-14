@@ -1,6 +1,10 @@
 .feedback {
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .feedback-header__title {
@@ -23,10 +27,32 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+}
+
 .feedback-form__fieldset {
   border: none;
   margin: 0;
   padding: 0;
+
+  &:nth-child(n+3) {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      padding: 0 43px 0 0;
+    }
+  }
 }
 
 .feedback-form__title {
@@ -46,6 +72,11 @@
   padding: 0 20px 39px;
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .feedback-form__item {
@@ -92,6 +123,12 @@
 
 .feedback-form__radio-item {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(even) {
+      width: 50%;
+    }
+  }
 }
 
 .radio__label {
@@ -105,6 +142,14 @@
   padding: 0 20px 24px;
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .checkbox__name {
@@ -118,10 +163,24 @@
   border-bottom: 1px solid $grey;
   padding: 0 20px 24px;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0 84px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .feedback-form__checkbox-item {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(even) {
+      width: 50%;
+    }
+  }
 }
 
 .feedback-form__textarea {
@@ -134,6 +193,27 @@
   line-height: 26px;
   padding: 16px;
   margin: 0 20px 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.feedback-form__fieldset-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+}
+
+.feedback-form__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .feedback-form__button {
@@ -148,6 +228,10 @@
   color: $white;
   background-color: $blue;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .feedback-form__required {
@@ -158,4 +242,8 @@
   text-transform: uppercase;
   display: flex;
   justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
