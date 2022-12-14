@@ -8,6 +8,12 @@
   text-align: center;
   color: $black;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video-content__description {
@@ -24,4 +30,10 @@
 .presentation__video {
   display: block;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .video-content__wrapper {
+    padding: 58px 101px;
+  }
 }
