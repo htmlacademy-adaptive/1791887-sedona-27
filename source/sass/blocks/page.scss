@@ -11,4 +11,12 @@
   line-height: 21px;
   font-weight: 400;
   color: $baseblack;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

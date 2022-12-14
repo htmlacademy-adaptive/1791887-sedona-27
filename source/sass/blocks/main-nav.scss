@@ -3,25 +3,33 @@
 }
 
 .main-nav__wrapper {
-  display: none;
   position: absolute;
   min-width: 320px;
-  margin: 0 -20px;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .main-nav__toggle-open {
   position: absolute;
-  top: 17px;
-  right: 20px;
+  right: 0;
   border: none;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     background-image: url("../../img/icon-menu.svg");
     background-repeat: no-repeat;
     width: 23px;
     height: 22px;
+    right: 20px;
+    top: 17px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &:hover {
@@ -37,13 +45,29 @@
   display: flex;
   flex-direction: column;
   background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 153px 153px 185px 153px 153px;
+    background-color: $white;
+  }
 }
 
 .main-nav__item {
   background-color: $blue;
   margin-bottom: 1px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    box-shadow: none;
+
+    &:nth-child(4n+3) {
+      grid-column: 4/5;
+    }
+  }
 }
+
 
 .main-nav__item:last-child::after {
   content: " ";
@@ -52,6 +76,10 @@
   height: 7px;
   bottom: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }
 
 .main-nav__link {
@@ -71,5 +99,32 @@
   &:active {
     color: rgba($white, 0.3);
     background-color: $darkerblue;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 133px;
+    padding: 18px 0 17px;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+
+    &--current:visited {
+      color: $current;
+    }
+
+    &:hover {
+      color: $blue;
+      background: $white;
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+      background-color: $white;
+    }
   }
 }

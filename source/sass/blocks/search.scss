@@ -1,5 +1,9 @@
 .search__wrapper {
   padding: 38px 29px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 155px 58px;
+  }
 }
 
 .search__title {
