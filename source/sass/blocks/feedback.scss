@@ -1,6 +1,10 @@
 .feedback {
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .feedback-header__title {
@@ -23,10 +27,40 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 120px;
+    }
+  }
+}
+
 .feedback-form__fieldset {
   border: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  &:nth-child(n+3) {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      padding: 0 63px 0 0;
+    }
+  }
 }
 
 .feedback-form__title {
@@ -46,6 +80,11 @@
   padding: 0 20px 39px;
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .feedback-form__item {
@@ -82,7 +121,7 @@
 
 .feedback-form-phone__input,
 .feedback-form-email__input {
-  padding: 16px;
+  padding: 11px;
   background-color: $lightgrey;
   border: none;
   font-weight: 700;
@@ -92,6 +131,17 @@
 
 .feedback-form__radio-item {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(even) {
+      width: 50%;
+
+      @media (min-width: $desktop-width) {
+        width: 33.3%;
+        text-align: center;
+      }
+    }
+  }
 }
 
 .radio__label {
@@ -105,6 +155,18 @@
   padding: 0 20px 24px;
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 89px;
+    }
+  }
 }
 
 .checkbox__name {
@@ -118,10 +180,30 @@
   border-bottom: 1px solid $grey;
   padding: 0 20px 24px;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0 84px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .feedback-form__checkbox-item {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2n+2) {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-form__checkbox-item:nth-of-type(n) {
+    width: 25%;
+  }
 }
 
 .feedback-form__textarea {
@@ -134,6 +216,37 @@
   line-height: 26px;
   padding: 16px;
   margin: 0 20px 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+    margin: 0 96px 48px;
+  }
+}
+
+.feedback-form__fieldset-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+}
+
+.feedback-form__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+    margin: 0 96px 48px;
+  }
 }
 
 .feedback-form__button {
@@ -148,6 +261,10 @@
   color: $white;
   background-color: $blue;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .feedback-form__required {
@@ -158,4 +275,8 @@
   text-transform: uppercase;
   display: flex;
   justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

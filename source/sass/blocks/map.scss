@@ -1,3 +1,13 @@
-.map__image {
-  width: 100%;
+.map-wrapper {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    min-height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+    min-height: 350px;
+  }
 }

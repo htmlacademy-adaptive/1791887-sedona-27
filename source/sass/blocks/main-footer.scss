@@ -1,8 +1,19 @@
-.main-footer {
+.main-footer__wrapper {
   padding: 39px 12px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 36px 76px 36px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 76px 36px 45px;
+  }
 }
 
 .contacts__text {
@@ -16,6 +27,10 @@
   min-width: 156px;
   display: flex;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social__item {
@@ -49,6 +64,7 @@
 
 .main-footer__copyright {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  min-width: 128px;
 }

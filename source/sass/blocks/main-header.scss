@@ -2,11 +2,22 @@
   position: relative;
   background-color: $white;
   min-height: 56px;
-  margin: 0 20px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .main-header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+  }
 }
