@@ -5,6 +5,7 @@
 .main-nav__wrapper {
   position: absolute;
   min-width: 320px;
+  top: 0;
 
 
   @media (min-width: $tablet-width) {
@@ -13,10 +14,42 @@
   }
 }
 
-.main-nav__toggle-open {
+.main-nav--close .main-nav__toggle {
+  top: 0;
+  right: 0;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    width: 27px;
+    height: 4px;
+    background-color: $white;
+    z-index: 2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--open .main-nav__toggle {
   position: absolute;
   right: 0;
   border: none;
+  cursor: pointer;
 
   &::after {
     content: "";
