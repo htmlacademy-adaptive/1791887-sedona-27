@@ -80,6 +80,7 @@
   padding: 0 20px 39px;
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -91,16 +92,55 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .feedback-form__label {
   text-transform: uppercase;
 }
 
+.feedback-form-phone__label::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/phone-icon.svg");
+  right: 0;
+  bottom: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+  padding: 20px;
+}
+
+.feedback-form-email__label::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mail-icon.svg");
+  right: 0;
+  bottom: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+  padding: 20px;
+}
+
 .feedback-form__input {
-  padding: 16px;
   background-color: $lightgrey;
-  border: none;
+  width: 100%;
+  padding: 12px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  outline: none;
+  border: 4px solid transparent;
 }
 
 .feedback-form__input::placeholder {
@@ -108,6 +148,20 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
+}
+
+.feedback-form__input:hover {
+  background-color: $grey;
+}
+
+.feedback-form__input:active {
+  background: $white;
+  border: 4px solid $grey;
+}
+
+.feedback-form__input:focus {
+  background: $white;
+  border: 4px solid $grey;
 }
 
 .feedback-form-email__label,
@@ -121,16 +175,26 @@
 
 .feedback-form-phone__input,
 .feedback-form-email__input {
-  padding: 11px;
+  padding: 12px;
   background-color: $lightgrey;
-  border: none;
+  border: 4px solid transparent;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 54px);
+  }
+}
+
+.feedback-form-phone__input::placeholder,
+.feedback-form-email__input::placeholder {
+  color: rgba($black, 0.3);
 }
 
 .feedback-form__radio-item {
-  margin-bottom: 26px;
+  margin-bottom: 34px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     &:nth-child(even) {
@@ -138,36 +202,68 @@
 
       @media (min-width: $desktop-width) {
         width: 33.3%;
-        text-align: center;
       }
     }
   }
 }
 
 .radio__label {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $black;
+  padding-left: 62px;
+}
+
+.radio__label-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  outline: none;
+  border-radius: 50%;
+  background: $lightgrey;
+  left: 4px;
+  top: -13px;
+
+  &:hover {
+    background: $grey;
+  }
+
+  &:active {
+    background: $darkergrey;
+  }
 }
 
 .feedback-form__radio-list {
-  padding: 0 20px 24px;
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
+  padding: 0 20px 24px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 0 36px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     @media (min-width: $desktop-width) {
-      padding: 0 89px;
+      padding: 0 53px 0 53px;
     }
   }
 }
+
+.radio__input--active:checked + .radio__label-mark::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  left: 16px;
+  top: 16px;
+}
+
 
 .checkbox__name {
   font-weight: 700;
