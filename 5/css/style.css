@@ -1247,7 +1247,7 @@ ul {
 
 .checkbox__input--active:checked + .checkbox__label-mark::before {
   content: "";
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   position: absolute;
   display: block;
