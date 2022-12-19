@@ -68,3 +68,16 @@
   flex-wrap: wrap;
   min-width: 128px;
 }
+
+.social__item:active .social__image {
+  opacity: 0.3;
+}
+
+
+.social__link-HTMLAcademy:hover path {
+  fill: $blue;
+}
+
+.social__link-HTMLAcademy:active path {
+  fill: $lightblack;
+}
