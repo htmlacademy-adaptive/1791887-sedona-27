@@ -270,6 +270,32 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
+  display: block;
+  padding-left: 65px;
+  padding-bottom: 20px;
+  padding-top: 12px;
+  margin: 0;
+}
+
+
+.checkbox__label-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  outline: none;
+  background: $lightgrey;
+}
+
+.checkbox__input--active:checked + .checkbox__label-mark::before {
+  content: "";
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 16px;
+  left: 13px;
+  top: 16px;
 }
 
 .feedback-form__checkbox-list {
@@ -284,10 +310,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 53px 0 53px;
+  }
 }
 
 .feedback-form__checkbox-item {
   margin-bottom: 16px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     &:nth-child(2n+2) {
@@ -357,6 +388,20 @@
   color: $white;
   background-color: $blue;
   margin: 0 auto;
+
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $darkerblue;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $grey;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
