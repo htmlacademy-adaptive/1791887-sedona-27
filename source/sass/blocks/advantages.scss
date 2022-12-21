@@ -24,8 +24,28 @@
 .advantages__wrapper {
   background-color: $blue;
   color: $white;
-  padding: 54px 18px 40px;
+  padding: 54px 18px 38px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 33px;
+  }
+
+  &-second {
+    padding: 37px 18px;
+
+    @media (min-width: $tablet-width) {
+      padding: 33px 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 56px 33px;
+    }
+  }
 }
 
 .advantages__wrapper--top {

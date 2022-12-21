@@ -58,7 +58,13 @@
           </div>
         </li>
         <li class="advantages__image advantages__image--city">
-          <img src="img/city-mobile.jpg" width="320" height="260" alt="Фото города Седона.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+            <img src="img/city-mobile.jpg" width="320" height="260" srcset="img/city-mobile@2x.jpg 2x"
+              alt="Фото города Седона.">
+          </picture>
         </li>
         <li class="advantages__item">
           <div class="advantages__wrapper-icon advantages__wrapper-icon--home">
@@ -79,10 +85,17 @@
           </div>
         </li>
         <li class="advantages__image advantages__image--bridge">
-          <img src="img/bridge-devile-mobile.jpg" width="320" height="260" alt="Фото моста дьявола в городе Седона.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/bridge-devile-desktop@1x.jpg 1x, img/bridge-devile-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/bridge-devile-tablet@1x.jpg 1x, img/bridge-devile-tablet@2x.jpg 2x">
+            <img src="img/bridge-devile-mobile.jpg" width="320" height="260" srcset="img/bridge-devile-mobile@2x.jpg 2x"
+              alt="Фото моста дьявола в городе Седона.">
+          </picture>
         </li>
         <li class="advantages__item">
-          <div class="advantages__wrapper">
+          <div class="advantages__wrapper advantages__wrapper-second">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -123,7 +136,7 @@
     <section class="map">
       <h2 class="visually-hidden">Карта Седоны</h2>
       <iframe class="map-wrapper" src="https://yandex.ru/map-widget/v1/-/CCUnyCurLB" width="320" height="350"
-        frameborder="1" allowfullscreen="true" style="position: relative;"></iframe>
+        style="position: relative;"></iframe>
     </section>
   </main>
   <footer class="main-footer">
