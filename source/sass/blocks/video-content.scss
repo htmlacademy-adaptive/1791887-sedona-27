@@ -24,16 +24,37 @@
   text-align: center;
   margin: 0;
   margin-bottom: 38px;
+  padding: 0 27px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 240px;
+  }
 }
 
 
 .presentation__video {
   display: block;
   width: 100%;
+  height: 100%;
+  background-image: url("../img/preview-video.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/preview-video-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/preview-video-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .video-content__wrapper {
-    padding: 58px 101px;
+    padding: 58px 37px;
   }
 }

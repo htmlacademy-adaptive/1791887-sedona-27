@@ -3,6 +3,7 @@
 .welcome__wrapper {
   display: flex;
   justify-content: center;
+  background-size: 100%;
   background-image: url("../img/rectangle-background.svg"),
     url("../img/welcome-back-mobile.jpg");
   background-repeat: no-repeat;

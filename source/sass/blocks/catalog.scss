@@ -4,6 +4,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 0;
+  }
+}
+
 .catalog__header {
   display: flex;
   flex-direction: column;
@@ -111,6 +117,19 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    height: auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__image-first {
+    height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__image-first {
+    min-height: 400px;
   }
 }
 

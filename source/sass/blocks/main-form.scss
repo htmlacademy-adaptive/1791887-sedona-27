@@ -1,11 +1,34 @@
 .main-form__name {
   display: flex;
   justify-content: center;
+  background-size: 100%;
   background-image: url("../img/rectangle-background.svg"),
     url("../img/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 52px 0 67px;
+  background-position: bottom center;
+  padding: 52px 52px 67px;
   margin-bottom: 30px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/rectangle-background.svg"), url("../img/welcome-back-catalog@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/rectangle-tablet.svg"), url("../img/welcome-back-tablet.jpg");
+    padding: 95px 94px 117px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rectangle-tablet.svg"), url("../img/welcome-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop-catalog.jpg");
+    padding: 101px 370px 120px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop-catalog@2x.jpg");
+    }
+  }
 }
