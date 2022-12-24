@@ -73,6 +73,12 @@
   margin-bottom: 20px;
   color: $black;
   position: relative;
+
+  &--has-border {
+    @media (min-width: $tablet-width) {
+      padding: 0 70px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -93,32 +99,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feedback-form__horizon::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 123px;
-    left: -187px;
-    top: 15px;
-    background-color: $decorgrey;
-
-    @media (min-width: $desktop-width) {
-      left: -339px;
-    }
-  }
-
-  .feedback-form__horizon::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 123px;
-    right: -191px;
-    top: 14px;
-    background-color: $decorgrey;
-
-    @media (min-width: $desktop-width) {
-      right: -344px;
-    }
+  .feedback-form__horizon {
+    border-top: 1px solid $grey;
   }
 }
 
