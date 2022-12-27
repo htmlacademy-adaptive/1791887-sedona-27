@@ -1,0 +1,57 @@
+.modal {
+  background-color: $white;
+  margin: 0 auto;
+}
+
+.modal__text {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 45px 32px 0;
+}
+
+.modal__alert-title,
+.modal__confirm-title {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.modal__button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  min-width: 180px;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $white;
+  background-color: $blue;
+  margin: 0 auto;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $darkblue;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $darkerblue;
+  }
+}
+
+.modal__button-close {
+  min-width: 280px;
+}
+
+.modal__button-wrapper {
+  background-color: $lightgrey;
+  padding: 20px;
+}
