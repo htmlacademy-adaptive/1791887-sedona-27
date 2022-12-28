@@ -165,7 +165,7 @@
   color: $black;
 }
 
-.catalog__button-like:hover path {
+.catalog__button:hover .catalog__button-like path {
   fill: $blue;
   opacity: 1;
 }
