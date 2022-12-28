@@ -73,6 +73,12 @@
   margin-bottom: 20px;
   color: $black;
   position: relative;
+
+  &--has-border {
+    @media (min-width: $tablet-width) {
+      padding: 0 70px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -93,32 +99,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feedback-form__horizon::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 123px;
-    left: -187px;
-    top: 15px;
-    background-color: $decorgrey;
-
-    @media (min-width: $desktop-width) {
-      left: -339px;
-    }
-  }
-
-  .feedback-form__horizon::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 123px;
-    right: -191px;
-    top: 14px;
-    background-color: $decorgrey;
-
-    @media (min-width: $desktop-width) {
-      right: -344px;
-    }
+  .feedback-form__horizon {
+    border-top: 1px solid $grey;
   }
 }
 
@@ -382,16 +364,21 @@
   }
 }
 
+
+@media (min-width: $only-mobile-width) {
+  .feedback-form__textarea--width {
+    width: 279px;
+  }
+}
+
 .feedback-form__textarea {
   background-color: $lightgrey;
   border: none;
-  min-width: 280px;
-  min-height: 150px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   padding: 16px;
-  margin: 0 20px 56px;
+  margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -401,6 +388,18 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     margin: 0;
+  }
+}
+
+.feedback-form__label-textarea {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -437,6 +436,7 @@
   color: $white;
   background-color: $blue;
   margin: 0 auto;
+  cursor: pointer;
 
   &:hover {
     background-color: $darkblue;
