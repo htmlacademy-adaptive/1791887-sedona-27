@@ -161,19 +161,6 @@
   background: transparent;
 }
 
-.catalog__link-like {
-  color: $black;
-}
-
-.catalog__button:hover .catalog__button-like path {
-  fill: $blue;
-  opacity: 1;
-}
-
-.catalog__link-like:hover {
-  color: $blue;
-}
-
 .catalog__like-value {
   font-weight: 700;
   font-size: 14px;
@@ -185,12 +172,5 @@
     &:hover {
       color: $blue;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog__button-like path {
-    fill: $white;
-    opacity: 1;
   }
 }
