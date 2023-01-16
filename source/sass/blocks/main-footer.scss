@@ -1,5 +1,5 @@
 .main-footer__wrapper {
-  padding: 39px 12px 23px;
+  padding: 32px 12px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,8 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 33px;
 }
 
 .social__list {
@@ -60,6 +62,7 @@
   margin: 0;
   display: flex;
   align-items: center;
+  margin-bottom: 33px;
 }
 
 .main-footer__copyright {

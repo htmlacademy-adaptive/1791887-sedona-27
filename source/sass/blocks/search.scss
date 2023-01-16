@@ -1,5 +1,5 @@
 .search__wrapper {
-  padding: 38px 29px 49px;
+  padding: 46px 16px 49px;
 
   @media (min-width: $tablet-width) {
     padding: 61px 155px 58px;
@@ -12,7 +12,7 @@
 
 .search__title {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -28,11 +28,15 @@
 }
 
 .search__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   background-color: $blue;
-  padding: 16px 50px;
+  padding: 17px 12px;
   color: $white;
   display: flex;
   justify-content: center;
