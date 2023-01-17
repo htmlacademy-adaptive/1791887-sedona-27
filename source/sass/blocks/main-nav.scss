@@ -126,13 +126,10 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     box-shadow: none;
+    margin: 0;
 
     &:nth-child(4n+3) {
       grid-column: 4/5;
-    }
-
-    &:nth-child(3) {
-      margin-left: 25px;
     }
   }
 }
@@ -160,6 +157,7 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  margin-right: -4px;
 
   &:hover {
     background-color: $darkblue;

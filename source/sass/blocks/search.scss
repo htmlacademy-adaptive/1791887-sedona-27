@@ -17,6 +17,11 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px;
+    font-size: 30px;
+  }
 }
 
 .search__description {
@@ -24,6 +29,18 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 32px;
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+  }
 }
 
 .search__link {
