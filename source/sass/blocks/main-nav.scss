@@ -132,8 +132,11 @@
       grid-column: 4/5;
     }
   }
-}
 
+  @media (min-width: $desktop-width) {
+    padding-right: 4px;
+  }
+}
 
 .main-nav__item:last-child::after {
   content: " ";
