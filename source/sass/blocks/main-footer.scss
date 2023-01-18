@@ -1,5 +1,5 @@
 .main-footer__wrapper {
-  padding: 34px 12px 23px;
+  padding: 56px 13px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,6 +97,10 @@
 
     &--catalog {
       margin: -10px -9px 2px 17px;
+    }
+
+    &--form {
+      margin: -10px -9px 4px 19px;
     }
   }
 }

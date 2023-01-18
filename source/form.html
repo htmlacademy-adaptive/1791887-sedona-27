@@ -53,7 +53,8 @@
     </section>
     <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__title feedback-form__title-rectangle">Представьтесь:</legend>
+        <legend class="feedback-form__title feedback-form__title-rectangle feedback-form__title-name">Представьтесь:
+        </legend>
         <ul class="feedback-form__list">
           <li class="feedback-form__item">
             <label class="feedback-form__label" for="name">Имя<sup>*</sup>:</label>
@@ -71,8 +72,8 @@
         </ul>
       </fieldset>
       <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__title">Контактная информация:</legend>
-        <ul class="feedback-form__list">
+        <legend class="feedback-form__title feedback-form__title-contacts">Контактная информация:</legend>
+        <ul class="feedback-form__list feedback-form__list-right-side">
           <li class="feedback-form__item feedback-form-phone">
             <label class="feedback-form-phone__label" for="tel">Контактный телефон<sup>*</sup>:
             </label>
@@ -141,21 +142,24 @@
           <li class="feedback-form__checkbox-item checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input  checkbox__input--active visually-hidden" type="checkbox" name="slide-park">
-              <span class="checkbox__label-mark"></span>
-              <span class="checkbox__name">Слайд-парк</span>
+              <span class="checkbox__label-mark checkbox__label-mark--park"></span>
+              <span class="checkbox__name checkbox__name--park">Слайд-парк</span>
             </label>
           </li>
           <li class="feedback-form__checkbox-item checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input  checkbox__input--active visually-hidden" type="checkbox" name="red-rocks">
               <span class="checkbox__label-mark"></span>
-              <span class="checkbox__name">Красные скалы</span>
+              <span class="checkbox__name checkbox__name--rock">Красные скалы</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback-form__fieldset feedback-form__fieldset-wrapper feedback-form__horizon">
-        <legend class="feedback-form__title feedback-form__title--has-border feedback-form__title-margin">Опишите свои
+      <fieldset
+        class="feedback-form__fieldset feedback-form__fieldset-wrapper feedback-form__horizon feedback-form__textarea-desk">
+        <legend
+          class="feedback-form__title feedback-form__title--has-border feedback-form__title-margin feedback-form__title-margin-last">
+          Опишите свои
           эмоции:</legend>
         <label class="feedback-form__label-textarea">
           <textarea class="feedback-form__textarea feedback-form__textarea--width" rows="5" cols="25" maxlength="40"
@@ -215,7 +219,7 @@
           </li>
         </ul>
       </section>
-      <div class="main-footer__copyright copyright">
+      <div class="main-footer__copyright copyright main-footer__copyright--form">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
           <svg class="social__link-HTMLAcademy" width="129" height="36" viewBox="0 0 129 36" fill="none"
