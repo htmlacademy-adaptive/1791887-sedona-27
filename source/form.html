@@ -27,7 +27,7 @@
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Форма Отзыва</a>
+            <a class="main-nav__link main-nav__link--current" href="#">Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
@@ -235,21 +235,26 @@
       </div>
     </div>
   </footer>
-  <div class="modal modal--alert visually-hidden">
-    <div class="modal__text modal__text--alert">
-      <h2 class="modal__alert-title">Что-то пошло не так!</h2>
-      <p class="modal__description">Проверьте поля, выделенные краснымб скорее всего вы забыли их заполнить</p>
+  <!--Для открытия модального окна добавь модификатор open -->
+  <div class="modal-container modal-container--close">
+    <div class="modal modal--alert">
+      <div class="modal__text modal__text--alert">
+        <h2 class="modal__alert-title">Что-то пошло не так!</h2>
+        <p class="modal__description">Проверьте поля, выделенные краснымб скорее всего вы забыли их заполнить</p>
+      </div>
+      <button class="modal__button" type="button">Ok</button>
     </div>
-    <button class="modal__button" type="button">Ok</button>
   </div>
-  <div class="modal modal--confirm visually-hidden">
-    <div class="modal__text modal__text--confirm">
-      <h2 class="modal__confirm-title">Ваш отзыв отправлен</h2>
-      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-        опубликуем его на сайте.</p>
-    </div>
-    <div class="modal__button-wrapper">
-      <button class="modal__button modal__button-close" type="button">Закрыть окно</button>
+  <div class="modal-container modal-container--close">
+    <div class="modal modal--confirm">
+      <div class="modal__text modal__text--confirm">
+        <h2 class="modal__confirm-title">Ваш отзыв отправлен</h2>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button modal__button-close" type="button">Закрыть окно</button>
+      </div>
     </div>
   </div>
   <script src="js/script.js"></script>
