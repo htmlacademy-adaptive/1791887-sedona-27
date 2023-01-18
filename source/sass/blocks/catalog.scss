@@ -16,7 +16,11 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 95px;
+    padding: 29px 95px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 95px 44px;
   }
 }
 
@@ -40,12 +44,13 @@
     background-color: $lightgrey;
     display: flex;
     justify-content: space-between;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 6px;
   }
 
   .catalog__info-button {
     display: flex;
     align-items: center;
+    margin: -13px 10px 0;
   }
 }
 
@@ -62,27 +67,34 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .catalog__wrapper-name {
+    padding: 18px 20px 6px;
+  }
+}
+
 .catalog__title {
-  margin: 0;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin: 0 0 31px;
+  padding: 8px 0 0;
   color: $black;
 }
 
 .catalog__description {
-  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 0 0 36px;
+  padding: 0 16px 0;
 
   @media (min-width: $desktop-width) {
     max-width: 496px;
+    padding: 0 34px 8px;
   }
 }
 
@@ -113,7 +125,7 @@
 .catalog__image {
   display: block;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -139,7 +151,6 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -151,8 +162,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: none;
-  margin: 0;
-  margin-bottom: 11px;
+  margin: 0 0 10px;
 }
 
 .catalog__button {
@@ -165,6 +175,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  margin: 0 -11px -4px;
 
   @media (min-width: $desktop-width) {
     color: $white;
@@ -179,4 +190,16 @@
   background-image: url("../img/like-icon.svg");
   background-size: 23px 21px;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title-desk {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__description-desk {
+    padding: 5px 0 0 5px;
+  }
 }

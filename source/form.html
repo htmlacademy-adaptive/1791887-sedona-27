@@ -88,7 +88,8 @@
         </ul>
       </fieldset>
       <fieldset class="feedback-form__fieldset feedback-form__horizon">
-        <legend class="feedback-form__title feedback-form__title--has-border">Ваше общее впечатление:</legend>
+        <legend class="feedback-form__title feedback-form__title--has-border feedback-form__margin">Ваше общее
+          впечатление:</legend>
         <ul class="feedback-form__radio-list">
           <li class="feedback-form__radio-item radio">
             <label class="radio__label">
@@ -117,7 +118,8 @@
         </ul>
       </fieldset>
       <fieldset class="feedback-form__fieldset feedback-form__horizon">
-        <legend class="feedback-form__title feedback-form__title--has-border">Посещенные <br> достопримечательности:
+        <legend class="feedback-form__title feedback-form__title--has-border feedback-form__title-margin">Посещенные
+          <br> достопримечательности:
         </legend>
         <ul class="feedback-form__checkbox-list">
           <li class="feedback-form__checkbox-item checkbox">
@@ -153,9 +155,10 @@
         </ul>
       </fieldset>
       <fieldset class="feedback-form__fieldset feedback-form__fieldset-wrapper feedback-form__horizon">
-        <legend class="feedback-form__title feedback-form__title--has-border">Опишите свои эмоции:</legend>
+        <legend class="feedback-form__title feedback-form__title--has-border feedback-form__title-margin">Опишите свои
+          эмоции:</legend>
         <label class="feedback-form__label-textarea">
-          <textarea class="feedback-form__textarea feedback-form__textarea--width" rows="10" cols="30" maxlength="40"
+          <textarea class="feedback-form__textarea feedback-form__textarea--width" rows="5" cols="25" maxlength="40"
             minlength="0" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
         </label>
       </fieldset>
@@ -166,7 +169,7 @@
     </form>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper main-footer__wrapper-form">
       <div class="main-footer__contacts contacts">
         <p class="contacts__text">#visitSEDONA</p>
       </div>
@@ -228,14 +231,14 @@
       </div>
     </div>
   </footer>
-  <div class="modal modal--alert">
+  <div class="modal modal--alert visually-hidden">
     <div class="modal__text modal__text--alert">
       <h2 class="modal__alert-title">Что-то пошло не так!</h2>
       <p class="modal__description">Проверьте поля, выделенные краснымб скорее всего вы забыли их заполнить</p>
     </div>
     <button class="modal__button" type="button">Ok</button>
   </div>
-  <div class="modal modal--confirm">
+  <div class="modal modal--confirm visually-hidden">
     <div class="modal__text modal__text--confirm">
       <h2 class="modal__confirm-title">Ваш отзыв отправлен</h2>
       <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы

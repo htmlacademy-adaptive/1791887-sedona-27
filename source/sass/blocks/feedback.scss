@@ -1,6 +1,6 @@
 .feedback {
   border-bottom: 1px solid $grey;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -13,10 +13,13 @@
   text-transform: uppercase;
   color: $black;
   text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .feedback__header {
-  padding: 6px 0 28px;
+  padding: 7px 0 27px;
 }
 
 .feedback-header__description {
@@ -25,6 +28,7 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,7 +74,7 @@
   font-size: 18px;
   line-height: 26px;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: $black;
   position: relative;
 
@@ -79,6 +83,14 @@
       padding: 0 70px;
     }
   }
+}
+
+.feedback-form__margin {
+  margin-bottom: 32px;
+}
+
+.feedback-form__title-margin {
+  margin-bottom: 19px;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,7 +119,7 @@
 .feedback-form__list {
   display: flex;
   flex-direction: column;
-  padding: 0 20px 39px;
+  padding: 0 20px 21px;
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
   position: relative;
@@ -121,13 +133,14 @@
 .feedback-form__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   position: relative;
 }
 
 .feedback-form__label {
   text-transform: uppercase;
   position: relative;
+  padding: 0 16px 0;
 }
 
 .feedback-form-phone__label::before {
@@ -163,7 +176,7 @@
 .feedback-form__input {
   background-color: $lightgrey;
   width: 100%;
-  padding: 12px;
+  padding: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -254,8 +267,8 @@
   outline: none;
   border-radius: 50%;
   background: $lightgrey;
-  left: 4px;
-  top: -13px;
+  left: -1px;
+  top: -16px;
 
   &:hover {
     background: $grey;
@@ -269,7 +282,7 @@
 .feedback-form__radio-list {
   border-bottom: 1px solid $grey;
   margin-bottom: 24px;
-  padding: 0 20px 24px;
+  padding: 0 20px 1px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -302,8 +315,8 @@
   line-height: 26px;
   color: $black;
   display: block;
-  padding-left: 65px;
-  padding-bottom: 20px;
+  padding-left: 63px;
+  padding-bottom: 8px;
   padding-top: 12px;
   margin: 0;
 }
@@ -331,7 +344,7 @@
 
 .feedback-form__checkbox-list {
   border-bottom: 1px solid $grey;
-  padding: 0 20px 24px;
+  padding: 0 20px 8px;
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
@@ -377,8 +390,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding: 16px;
-  margin-bottom: 56px;
+  padding: 19px 16px 8px 17px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -389,6 +402,14 @@
     width: 100%;
     margin: 0;
   }
+}
+
+.feedback-form__textarea::placeholder {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .feedback-form__textarea:hover {
@@ -440,14 +461,15 @@
   display: flex;
   justify-content: center;
   min-width: 280px;
-  padding: 16px;
+  padding: 17px;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   color: $white;
   background-color: $blue;
   margin: 0 auto;
   cursor: pointer;
+  text-transform: uppercase;
 
   &:hover {
     background-color: $darkblue;
