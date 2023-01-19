@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.ico/152.svg">
+  <link rel="preload" href="/source/fonts/ptsans.woff2" as="style" crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="style" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -25,7 +27,7 @@
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Фото и видео</a>
+              <a class="main-nav__link main-nav__link--current" href="#">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма Отзыва</a>
@@ -71,12 +73,13 @@
             <div class="catalog__wrapper-item">
               <div class="catalog__info">
                 <h3 class="catalog__title-item">Неродные просторы</h3>
-                <p class="catalog__description-item"><cite>Автор фото: Борис</cite></p>
+                <p class="catalog__description-item">Автор фото: Борис</p>
               </div>
               <div class="catalog__info-button">
                 <button class="catalog__button catalog__button--like" type="button">
                   <span class="visually-hidden">Поставить лайк</span>
-                  <svg class="catalog__button-like" width="23" height="21">
+                  <svg class="catalog__button-like" aria-hidden="true" focusable="false" width="23" height="21"
+                    viewBox="0 0 23 21" fill="currentColor" role="img">
                     <use href="img/sprite.svg#icon-like"></use>
                   </svg>
                 </button>
@@ -95,15 +98,16 @@
                   alt="Цветущий кактус на фоне каньона." width="280" height="280">
               </picture>
             </a>
-            <div class="catalog__wrapper-item">
+            <div class="catalog__wrapper-item catalog__wrapper-name">
               <div class="catalog__info">
-                <h3 class="catalog__title-item">Местная растительность</h3>
-                <p class="catalog__description-item"><cite>Автор фото: Сергей</cite></p>
+                <h3 class="catalog__title-item catalog__title-desk">Местная растительность</h3>
+                <p class="catalog__description-item catalog__description-desk">Автор фото: Сергей</p>
               </div>
               <div class="catalog__info-button">
                 <button class="catalog__button catalog__button--like" type="button">
                   <span class="visually-hidden">Поставить лайк</span>
-                  <svg class="catalog__button-like" width="23" height="21">
+                  <svg class="catalog__button-like" aria-hidden="true" focusable="false" width="23" height="21"
+                    viewBox="0 0 23 21" fill="currentColor" role="img">
                     <use href="img/sprite.svg#icon-like"></use>
                   </svg>
                 </button>
@@ -124,13 +128,14 @@
             </a>
             <div class="catalog__wrapper-item">
               <div class="catalog__info">
-                <h3 class="catalog__title-item">Дорога на север</h3>
-                <p class="catalog__description-item"><cite>Автор фото: Петр</cite></p>
+                <h3 class="catalog__title-item catalog__title-desk">Дорога на север</h3>
+                <p class="catalog__description-item catalog__description-desk">Автор фото: Петр</p>
               </div>
               <div class="catalog__info-button">
                 <button class="catalog__button catalog__button--like" type="button">
                   <span class="visually-hidden">Поставить лайк</span>
-                  <svg class="catalog__button-like" width="23" height="21">
+                  <svg class="catalog__button-like" aria-hidden="true" focusable="false" width="23" height="21"
+                    viewBox="0 0 23 21" fill="currentColor" role="img">
                     <use href="img/sprite.svg#icon-like"></use>
                   </svg>
                 </button>
@@ -151,14 +156,15 @@
             </a>
             <div class="catalog__wrapper-item">
               <div class="catalog__info">
-                <h3 class="catalog__title-item">Мост дьявола</h3>
-                <p class="catalog__description-item"><cite>Автор фото: Антон</cite></p>
+                <h3 class="catalog__title-item catalog__title-desk">Мост дьявола</h3>
+                <p class="catalog__description-item catalog__description-desk">Автор фото: Антон</p>
               </div>
               <div class="catalog__info-button">
                 <button class="catalog__button catalog__button--like" type="button">
                   <span class="visually-hidden">Поставить лайк</span>
-                  <svg class="catalog__button-like" width="23" height="21">
-                    <use xlink:href="./img/sprite.svg#icon-like"></use>
+                  <svg class="catalog__button-like" aria-hidden="true" focusable="false" width="23" height="21"
+                    viewBox="0 0 23 21" fill="currentColor" role="img">
+                    <use href="./img/sprite.svg#icon-like"></use>
                   </svg>
                 </button>
                 <span class="catalog__like-value">254</span>
@@ -185,7 +191,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper main-footer__wrapper-catalog">
         <div class="main-footer__contacts contacts">
           <p class="contacts__text">#visitSEDONA</p>
         </div>
@@ -231,7 +237,7 @@
             </li>
           </ul>
         </section>
-        <div class="main-footer__copyright copyright">
+        <div class="main-footer__copyright copyright main-footer__copyright--catalog">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="social__link-HTMLAcademy" width="129" height="36" viewBox="0 0 129 36" fill="none"

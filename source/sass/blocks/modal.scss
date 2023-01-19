@@ -1,15 +1,39 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
 .modal {
   background-color: $white;
-  margin: 0 auto;
+  margin: 116px auto;
   max-width: 320px;
+  min-height: 280px;
 
   @media (min-width: $tablet-width) {
     max-width: 400px;
+    min-height: 347px;
+    margin: 283px auto;
   }
 
   &--confirm {
     @media (min-width: $tablet-width) {
-      max-width: 600px;
+      max-width: 640px;
+      min-height: 347px;
+      margin: 162px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 244px auto;
+
+    &--confirm {
+      margin: 145px auto;
     }
   }
 }
@@ -25,7 +49,7 @@
 
   &--confirm {
     @media (min-width: $tablet-width) {
-      padding: 53px 99px 30px 97px;
+      padding: 53px 99px 58px 97px;
     }
   }
 }
@@ -75,4 +99,12 @@
 .modal__button-wrapper {
   background-color: $lightgrey;
   padding: 20px;
+}
+
+.modal-container--close {
+  display: none;
+}
+
+.modal-container--open {
+  display: block;
 }
