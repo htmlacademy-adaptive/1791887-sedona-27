@@ -5,12 +5,13 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-//import terser from 'gulp-terser';
+import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import { stacksvg } from 'gulp-stacksvg';
 import del from 'del';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -31,15 +32,17 @@ csso()
 
 const html = () => {
 return gulp.src('source/*.html')
+.pipe(htmlmin({collapseWhitespace: true}))
+.pipe(htmlmin({ignoreCustomFragments: [ /<br>\s/gi ]}))
 .pipe(gulp.dest('build'));
 }
 
 // Scripts
 
 const scripts = () => {
-return gulp.src('source/js/script.js')
+return gulp.src('source/js/*.js')
+.pipe(terser())
 .pipe(gulp.dest('build/js'))
-.pipe(browser.stream());
 }
 
 // Images
@@ -85,7 +88,7 @@ return gulp.src('source/img/*.svg')
 const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
-'source/*.ico',
+'source/favicon.ico/*.svg',
 ], {
 base: 'source'
 })
