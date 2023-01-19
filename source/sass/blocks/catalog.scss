@@ -186,12 +186,6 @@
   }
 }
 
-.catalog__button--like {
-  background-image: url("../img/like-icon.svg");
-  background-size: 23px 21px;
-  background-repeat: no-repeat;
-}
-
 @media (min-width: $desktop-width) {
   .catalog__title-desk {
     margin-left: 5px;
@@ -201,5 +195,18 @@
 @media (min-width: $desktop-width) {
   .catalog__description-desk {
     padding: 5px 0 0 5px;
+  }
+}
+
+.catalog__button-like {
+  fill: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $tablet-width) {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+    opacity: 1;
   }
 }
