@@ -50,7 +50,6 @@
   .catalog__info-button {
     display: flex;
     align-items: center;
-    margin: -13px 10px 0;
   }
 }
 
@@ -166,23 +165,32 @@
 }
 
 .catalog__button {
-  margin-right: 10px;
   border: none;
   background: transparent;
+  padding: 0 11px 13px;
 }
 
 .catalog__like-value {
+  border: none;
+  background-color: $white;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin: 0 -11px -4px;
+  margin: -7px 1px 2px -1px;
+  padding: 2px 0;
+  max-width: 30px;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $lightgrey;
+  }
 
   @media (min-width: $desktop-width) {
     color: $white;
-
-    &:hover {
-      color: $blue;
-    }
+    background-color: transparent;
   }
 }
 
@@ -201,12 +209,21 @@
 .catalog__button-like {
   fill: rgba(0, 0, 0, 0.3);
 
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (min-width: $tablet-width) {
     fill: rgba(0, 0, 0, 0.3);
   }
 
   @media (min-width: $desktop-width) {
-    fill: $white;
-    opacity: 1;
+    & {
+      fill: $white;
+    }
   }
 }
