@@ -23,7 +23,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 62px 47px 40px 45px;
+      padding: 42px 47px 40px 45px;
       gap: 113px;
     }
   }
@@ -116,10 +116,10 @@
 }
 
 
-.social__link-HTMLAcademy:hover path {
+.HTMLAcademy:hover path {
   fill: $blue;
 }
 
-.social__link-HTMLAcademy:active path {
+.HTMLAcademy:active path {
   fill: $lightblack;
 }
