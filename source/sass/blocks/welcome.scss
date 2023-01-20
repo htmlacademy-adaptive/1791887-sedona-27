@@ -3,37 +3,37 @@
   justify-content: center;
   background-size: 100%;
   background-image: url("../img/rectangle-background.svg"),
-    url("../img/welcome-back-mobile.jpg");
+    url("../img/welcome-back-mobile.webp");
   background-repeat: no-repeat;
   background-position: bottom center;
   padding: 90px 19px 85px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/rectangle-background.svg"), url("../img/welcome-back-mobile@2x.jpg");
+    background-image: url("../img/rectangle-background.svg"), url("../img/welcome-back-mobile@2x.webp");
     background-repeat: no-repeat;
     background-position: bottom center;
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/rectangle-tablet.svg"), url("../img/back-desktop.jpg");
+    background-image: url("../img/rectangle-tablet.svg"), url("../img/back-desktop.webp");
     padding: 77px 154px 91px;
     background-repeat: no-repeat;
     background-position: bottom center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/rectangle-tablet.svg"), url("../img/back-desktop@2x.jpg");
+      background-image: url("../img/rectangle-tablet.svg"), url("../img/back-desktop@2x.webp");
       background-repeat: no-repeat;
       background-position: bottom center;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/hero-back-desktop.jpg");
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/hero-back-desktop.webp");
     background-position: bottom center;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-triangle-desktop.svg"), url("../img/hero-back-desktop@2x.jpg");
+      background-image: url("../img/intro-triangle-desktop.svg"), url("../img/hero-back-desktop@2x.webp");
       background-repeat: no-repeat;
       background-position: bottom center;
     }
