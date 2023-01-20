@@ -315,6 +315,10 @@
   &:active {
     background: $darkergrey;
   }
+
+  &:focus {
+    outline: 4px solid $darkgrey;
+  }
 }
 
 .feedback-form__radio-list {
@@ -379,6 +383,18 @@
   height: 46px;
   outline: none;
   background: $lightgrey;
+
+  &:hover {
+    background: $grey;
+  }
+
+  &:active {
+    background: $darkergrey;
+  }
+
+  &:focus {
+    outline: 4px solid $darkgrey;
+  }
 }
 
 .checkbox__input--active:checked + .checkbox__label-mark::before {
@@ -457,10 +473,13 @@
   line-height: 26px;
   padding: 19px 16px 8px 17px;
   margin-bottom: 44px;
+  resize: none;
+  height: 150px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     margin: 0;
+    height: 160px;
   }
 
   @media (min-width: $desktop-width) {
