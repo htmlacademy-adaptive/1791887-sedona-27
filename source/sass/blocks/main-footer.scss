@@ -42,12 +42,14 @@
 }
 
 .social__list {
-  min-width: 156px;
+  max-width: 175px;
   display: flex;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 6px;
 
   @media (min-width: $tablet-width) {
-    margin: -17px -20px 0 0;
+    margin: -19px -20px 0 0;
   }
 }
 
@@ -57,6 +59,10 @@
   padding: 12px;
 
   &:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }

@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 61px 95px 44px;
+    padding: 12px 95px 44px;
   }
 }
 
@@ -50,6 +50,12 @@
   .catalog__info-button {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__info-container .catalog__button {
+    padding: 0 1px 13px 7px;
   }
 }
 
@@ -168,6 +174,14 @@
   border: none;
   background: transparent;
   padding: 0 11px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 17px 13px 10px;
+  }
+}
+
+.catalog__button-container {
+  padding: 0 9px 13px 10px;
 }
 
 .catalog__like-value {
@@ -186,11 +200,22 @@
 
   @media (min-width: $tablet-width) {
     background-color: $lightgrey;
+    margin: -8px -6px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     color: $white;
     background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__value-first {
+    margin: -6px 2px 2px -7px;
+  }
+
+  &-three {
+    margin: -7px -15px 3px 9px;
   }
 }
 
