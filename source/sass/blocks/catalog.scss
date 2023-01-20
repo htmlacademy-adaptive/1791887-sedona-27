@@ -213,8 +213,10 @@
   .catalog__value-first {
     margin: -6px 2px 2px -7px;
   }
+}
 
-  &-three {
+@media (min-width: $tablet-width) {
+  .catalog__value-three {
     margin: -7px -15px 3px 9px;
   }
 }
