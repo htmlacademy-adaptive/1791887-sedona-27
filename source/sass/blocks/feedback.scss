@@ -315,10 +315,6 @@
   &:active {
     background: $darkergrey;
   }
-
-  &:focus {
-    outline: 4px solid $darkgrey;
-  }
 }
 
 .feedback-form__radio-list {
@@ -353,6 +349,16 @@
   top: 16px;
 }
 
+.radio__input:focus-visible + .radio__label-mark::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  outline: 3px solid #d6d6d6;
+  border-radius: 50%;
+}
 
 .checkbox__name {
   font-weight: 700;
@@ -376,13 +382,13 @@
   }
 }
 
-
 .checkbox__label-mark {
   position: absolute;
   width: 46px;
   height: 46px;
   outline: none;
   background: $lightgrey;
+  border-radius: 4px;
 
   &:hover {
     background: $grey;
@@ -396,6 +402,17 @@
     outline: 4px solid $darkgrey;
   }
 }
+
+.checkbox__input:focus-visible + .checkbox__label-mark::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  outline: 3px solid #d6d6d6;
+}
+
 
 .checkbox__input--active:checked + .checkbox__label-mark::before {
   content: "";
