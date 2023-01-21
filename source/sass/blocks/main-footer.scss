@@ -115,11 +115,14 @@
   opacity: 0.3;
 }
 
+.HTMLacademy {
+  fill: $black;
+}
 
-.HTMLAcademy:hover path {
+.HTMLacademy:hover {
   fill: $blue;
 }
 
-.HTMLAcademy:active path {
+.HTMLacademy:active {
   fill: $lightblack;
 }
